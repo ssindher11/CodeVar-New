@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_timeline">
+
+    <fragment
+        android:id="@+id/navigation_timeline"
+        android:name="com.vit.codevar.ui.TimelineFragment.TimelineFragment"
+        android:label="@string/timelineTitle"
+        tools:layout="@layout/fragment_timeline" />
+
+    <fragment
+        android:id="@+id/navigation_consumables"
+        android:name="com.vit.codevar.ui.ConsumablesFragment.ConsumablesFragment"
+        android:label="@string/consumablesTitle"
+        tools:layout="@layout/fragment_consumables" />
+
+    <fragment
+        android:id="@+id/navigation_help"
+        android:name="com.vit.codevar.ui.HelpFragment.HelpFragment"
+        android:label="@string/helpTitle"
+        tools:layout="@layout/fragment_help"/>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.vit.codevar.ui.NotficationFragment.NotificationFragment"
+        android:label="@string/notificationsTitle"
+        tools:layout="@layout/fragment_notification"/>
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.vit.codevar.ui.InfoFragment.InfoFragment"
+        android:label="@string/informationTitle"
+        tools:layout="@layout/fragment_info"/>
+
+</navigation>

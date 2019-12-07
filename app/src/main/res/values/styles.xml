@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/blinker_regular</item>
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/textGrey</item>
+    </style>
+
+    <style name="LoginEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/textGrey</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHint">@color/textGrey</item>
+    </style>
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="profileMainAttributeName">
+        <item name="android:fontFamily">@font/blinker_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="profileFullName">
+        <item name="android:fontFamily">@font/blinker_regular</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="profileUserName">
+        <item name="android:fontFamily">@font/blinker_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="profileMainAttributeValue">
+        <item name="android:fontFamily">@font/blinker_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+</resources>

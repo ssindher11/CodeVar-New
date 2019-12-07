@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">CodeVar</string>
+
+    <string name="logInTitle">Welcome to \n CodeVar</string>
+    <string name="emailHint">Email</string>
+    <string name="passwordHint">Password</string>
+    <string name="logInButtonText">Login</string>
+    <string name="logInMessage">Login with your CodePark credentials</string>
+
+    <string name="defaultFragmentName">TIMELINE</string>
+
+    <string name="defaultRoundName">Welcome!</string>
+    <string name="participantsArrival">Registration of Participants</string>
+    <string name="inauguration">Inauguration Ceremony</string>
+    <string name="biometric">Biometric Attendance for VITians</string>
+    <string name="intro">Event Introduction</string>
+    <string name="roundOne">Round 1</string>
+    <string name="pizza">Performance by clubs and Snacks</string>
+    <string name="roundTwo">Round 2</string>
+    <string name="result">Result declaration and elimination</string>
+    <string name="breakfast">Break</string>
+    <string name="roundThree">Round 3</string>
+    <string name="lunch">Lunch</string>
+    <string name="roundFour">Round 4</string>
+    <string name="breakEnd">Valedictory Ceremony</string>
+    <string name="eventEnd">Thank You!</string>
+
+    <string name="timelineTitle">Timeline</string>
+    <string name="consumablesTitle">Consumables</string>
+    <string name="helpTitle">Help</string>
+    <string name="notificationsTitle">Notifications</string>
+    <string name="informationTitle">About Us</string>
+
+    <string name="notificationTitle">Notification</string>
+    <string name="notificationRecycleView">Test</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LogIn</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="consumables_heading">Show this at the consumables desk to get your food and goodies</string>
+
+    <string name="level">Level</string>
+    <string name="activeness">Activeness</string>
+    <string name="helpfulness">Helpfulness</string>
+    <string name="intelligence">Intelligence</string>
+
+</resources>
