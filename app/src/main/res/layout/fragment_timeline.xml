@@ -40,7 +40,7 @@
             android:id="@+id/horizontalScrollView"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="80dp"
             android:scrollbars="none"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,6 +50,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#748290"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#3D4C5C"
+                        android:textSize="16sp" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/timeline1"
@@ -67,7 +96,7 @@
                         android:text="Registration of Participants"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -97,7 +126,7 @@
                         android:text="Inauguration Ceremony"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -127,7 +156,7 @@
                         android:text="Biometric Attendance for VITians"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -157,7 +186,7 @@
                         android:text="Event Introduction"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -187,7 +216,7 @@
                         android:text="Round 1"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -217,7 +246,7 @@
                         android:text="Performance by clubs and Snacks"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -247,7 +276,7 @@
                         android:text="Round 2"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -277,7 +306,7 @@
                         android:text="Result Declaration and Elimination"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -307,7 +336,7 @@
                         android:text="Break"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -337,7 +366,7 @@
                         android:text="Round 3"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -367,7 +396,7 @@
                         android:text="Lunch"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -397,7 +426,7 @@
                         android:text="Round 4"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -426,7 +455,7 @@
                         android:text="Valedictory Ceremony"
                         android:textAlignment="center"
                         android:textColor="#748290"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="150dp"
@@ -449,9 +478,11 @@
             android:layout_marginBottom="20dp"
             android:text="Up Next"
             android:textColor="#748290"
+            app:layout_constraintVertical_bias="1"
             android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timelineChart" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

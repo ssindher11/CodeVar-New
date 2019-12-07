@@ -26,44 +26,40 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class NotificationFragment extends Fragment
-{
+public class NotificationFragment extends Fragment {
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-    {
-        return inflater.inflate(R.layout.fragment_notification,container,false);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_notification, container, false);
     }
+
     @Override
-    public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState)
-    {
+    public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         MainActivity.fragmentTitle.setText(R.string.notificationsTitle);
 
-        final List<NotificationRVData> RVData =new ArrayList<>();
+//        final List<NotificationRVData> RVData = new ArrayList<>();
         final DatabaseReference NotRef = FirebaseDatabase.getInstance().getReference().child("Notifications");
-        NotRef.addValueEventListener(new ValueEventListener()
-        {
+        NotRef.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
-            {
-                for(DataSnapshot ds : dataSnapshot.getChildren())
-                {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                List<NotificationRVData> RVData = new ArrayList<>();
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
                     System.out.println(ds.getValue());
-                    final NotificationRVData tempdat=ds.getValue(NotificationRVData.class);
+                    final NotificationRVData tempdat = ds.getValue(NotificationRVData.class);
                     RVData.add(tempdat);
                 }
                 Collections.reverse(RVData);
-                RecyclerView recyclerView =view.findViewById(R.id.notificationRecyclerView);
-                NotificationRecyclerViewAdapter adapter = new NotificationRecyclerViewAdapter(getContext(),RVData);
+                RecyclerView recyclerView = view.findViewById(R.id.notificationRecyclerView);
+                NotificationRecyclerViewAdapter adapter = new NotificationRecyclerViewAdapter(getContext(), RVData);
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
                 recyclerView.setAdapter(adapter);
             }
+
             @Override
-            public void onCancelled(@NonNull DatabaseError databaseError)
-            {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
             }
         });
     }
